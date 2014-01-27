@@ -1,14 +1,49 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="wrap_content">
 
-    <LinearLayout android:id="@+id/linearLayout1"
+            <!-- REMINDERS -->
+    <LinearLayout
+        android:id="@+id/reminders_row"
         android:orientation="vertical"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true">
+        <TextView
+            android:id="@+id/reminders_group_label"
+            android:text="@string/event_info_reminders_label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="0dip"
+            style="@style/TextAppearance.EditEvent_LabelSmall" />
+        <LinearLayout
+            android:id="@+id/reminder_items_container"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="-8dip"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="8dip"
+            android:orientation="vertical" />
+        <Button
+            android:id="@+id/reminder_add"
+            android:text="@string/reminders_label"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="top"
+            android:paddingBottom="12dp"
+            android:layout_marginTop="0dip"
+            android:layout_marginBottom="0dip"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#FF777777"
+            android:minHeight="20dip"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/accessibility_add_reminder"
+            style="@style/TextAppearance.EditEvent_LabelSmall" />
     </LinearLayout>
         
 </LinearLayout>

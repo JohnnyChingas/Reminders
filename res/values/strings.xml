@@ -4,5 +4,16 @@
     <string name="app_name">Reminders</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+    <string name="event_info_reminders_label">Test</string>
+    <!-- Label for the list of reminders for an event [CHAR LIMIT=20] -->
+    <string name="reminders_label">Add reminder</string>
+    <!-- Add a reminder to an event [CHAR LIMIT = NONE]-->
+    <string name="accessibility_add_reminder">Add reminder</string>
+	<!-- Set the time for the reminder[CHAR LIMIT = NONE]-->
+    <string name="accessibility_reminder_time">Reminder time</string>
+    <!-- Set the type of the reminder (popup/email/sms)[CHAR LIMIT = NONE]-->
+    <string name="accessibility_reminder_type">Reminder type</string>
+    <!-- Remove a reminder from an event [CHAR LIMIT = NONE]-->
+    <string name="accessibility_remove_reminder">Remove reminder</string>
+    
 </resources>
