@@ -49,7 +49,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	}
 	
 	public void onClick(View view){
-		
+		System.out.println(view.getId());
 		switch(view.getId()){
 		case(R.id.reminder_add):
 			System.out.println("Add Reminder");
@@ -58,16 +58,25 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		
 		case(R.id.reminder_remove):
 			System.out.println("Delete Reminder");
+        		LinearLayout reminderItem = (LinearLayout) view.getParent();
+        		LinearLayout parent = (LinearLayout) reminderItem.getParent();
+        		parent.removeView(reminderItem);
+        		//mReminderViews.remove(reminderItem);
 		break;
 		}
 		
 	}
 	
 	private void addReminder(){
+		
 		LinearLayout mView = (LinearLayout) findViewById(R.id.reminder_items_container);
 		LayoutInflater inflater = this.getLayoutInflater();
 		LinearLayout reminderItem = (LinearLayout) inflater.inflate(R.layout.edit_reminder_item,null);
 		mView.addView(reminderItem);
+		
+		ImageButton reminderRemoveButton;
+        reminderRemoveButton = (ImageButton) reminderItem.findViewById(R.id.reminder_remove);
+        reminderRemoveButton.setOnClickListener(this);
 	}
 
 	
