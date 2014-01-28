@@ -44,6 +44,23 @@
             android:background="?android:attr/selectableItemBackground"
             android:contentDescription="@string/accessibility_add_reminder"
             style="@style/TextAppearance.EditEvent_LabelSmall" />
+        <Button
+            android:id="@+id/start"
+            android:text="@string/start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="top"
+            android:paddingBottom="12dp"
+            android:layout_marginTop="0dip"
+            android:layout_marginBottom="0dip"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="#FF777777"
+            android:minHeight="20dip"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/accessibility_add_reminder"
+            style="@style/TextAppearance.EditEvent_LabelSmall" />
     </LinearLayout>
         
 </LinearLayout>

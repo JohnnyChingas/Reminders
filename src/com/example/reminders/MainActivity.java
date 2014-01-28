@@ -22,7 +22,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		LinearLayout reminderItem = (LinearLayout) inflater.inflate(R.layout.edit_reminder_item,null);
 		view.addView(reminderItem);
 		
-		
         ImageButton reminderRemoveButton;
         reminderRemoveButton = (ImageButton) reminderItem.findViewById(R.id.reminder_remove);
         reminderRemoveButton.setOnClickListener(this);
@@ -42,10 +41,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		
 		case(R.id.reminder_remove):
 			System.out.println("Delete Reminder");
-        		LinearLayout reminderItem = (LinearLayout) view.getParent();
-        		LinearLayout parent = (LinearLayout) reminderItem.getParent();
-        		parent.removeView(reminderItem);
-        		//mReminderViews.remove(reminderItem);
+			removeReminder(view);
 		break;
 		}
 		
@@ -63,6 +59,11 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         reminderRemoveButton.setOnClickListener(this);
 	}
 
+	private void removeReminder(View view){
+		LinearLayout reminderItem = (LinearLayout) view.getParent();
+		LinearLayout parent = (LinearLayout) reminderItem.getParent();
+		parent.removeView(reminderItem);
+	}
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

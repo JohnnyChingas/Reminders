@@ -112,14 +112,15 @@ public final class R {
         public static final int ic_menu_remove_field_holo_light=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f090007;
+        public static final int action_settings=0x7f090008;
         public static final int reminder_add=0x7f090003;
         public static final int reminder_items_container=0x7f090002;
-        public static final int reminder_method_value=0x7f090005;
-        public static final int reminder_minutes_value=0x7f090004;
-        public static final int reminder_remove=0x7f090006;
+        public static final int reminder_method_value=0x7f090006;
+        public static final int reminder_minutes_value=0x7f090005;
+        public static final int reminder_remove=0x7f090007;
         public static final int reminders_group_label=0x7f090001;
         public static final int reminders_row=0x7f090000;
+        public static final int start=0x7f090004;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -131,16 +132,16 @@ public final class R {
     public static final class string {
         /**  Add a reminder to an event [CHAR LIMIT = NONE]
          */
-        public static final int accessibility_add_reminder=0x7f060005;
+        public static final int accessibility_add_reminder=0x7f060006;
         /**  Set the time for the reminder[CHAR LIMIT = NONE]
          */
-        public static final int accessibility_reminder_time=0x7f060006;
+        public static final int accessibility_reminder_time=0x7f060007;
         /**  Set the type of the reminder (popup/email/sms)[CHAR LIMIT = NONE]
          */
-        public static final int accessibility_reminder_type=0x7f060007;
+        public static final int accessibility_reminder_type=0x7f060008;
         /**  Remove a reminder from an event [CHAR LIMIT = NONE]
          */
-        public static final int accessibility_remove_reminder=0x7f060008;
+        public static final int accessibility_remove_reminder=0x7f060009;
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
         public static final int event_info_reminders_label=0x7f060003;
@@ -148,6 +149,7 @@ public final class R {
         /**  Label for the list of reminders for an event [CHAR LIMIT=20] 
          */
         public static final int reminders_label=0x7f060004;
+        public static final int start=0x7f060005;
     }
     public static final class style {
         /** 

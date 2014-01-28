@@ -7,6 +7,7 @@
     <string name="event_info_reminders_label">Test</string>
     <!-- Label for the list of reminders for an event [CHAR LIMIT=20] -->
     <string name="reminders_label">Add reminder</string>
+    <string name="start">Start</string>
     <!-- Add a reminder to an event [CHAR LIMIT = NONE]-->
     <string name="accessibility_add_reminder">Add reminder</string>
 	<!-- Set the time for the reminder[CHAR LIMIT = NONE]-->
