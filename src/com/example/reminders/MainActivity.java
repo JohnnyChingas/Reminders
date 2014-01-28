@@ -1,24 +1,14 @@
 package com.example.reminders;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
-import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity implements OnClickListener{
 	
@@ -26,12 +16,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
-		/*
-		ArrayList<String> mReminderMinuteLabels;
-		Resources r = this.getResources();
-		mReminderMinuteLabels = loadStringArray(r, R.array.reminder_minutes_labels);
-		*/
 		
 		LinearLayout view = (LinearLayout) findViewById(R.id.reminder_items_container);
 		LayoutInflater inflater = this.getLayoutInflater();
@@ -86,23 +70,8 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	
-    private static ArrayList<String> loadStringArray(Resources r, int resNum) {
-        String[] labels = r.getStringArray(resNum);
-        ArrayList<String> list = new ArrayList<String>(Arrays.asList(labels));
-        return list;
-    }
-    
-    private static void setReminderSpinnerLabels(Activity activity, Spinner spinner,
-            ArrayList<String> labels) {
-        Resources res = activity.getResources();
-        spinner.setPrompt(res.getString(R.string.reminders_label));
-        int resource = android.R.layout.simple_spinner_item;
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(activity, resource, labels);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-    }
+
+}
     
     
 
-}
